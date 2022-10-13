@@ -1,4 +1,4 @@
-<script>
+
     function validateForm() {
   let x = document.forms["myform"]["uname"].value;
   let y= document.forms["myForm"]["psw"].value;
@@ -10,4 +10,3 @@
     return false;
   }
 }
-  </script>
