@@ -2,28 +2,30 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/sdd.css">
+<link rel="stylesheet" type="text/css" href="css/sdd.css"> 
+<script src="./js/validation.js"></script>
 </head>
 <body>
   <h2>Login Form</h2>
-<form  name="myform" action="admin/" method="post">
+<form  name="myForm" action="/anil/admin" onsubmit="return validateForm();" method="post">
+  <form action="index.html">
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="fname"><b>Username</b></label>
+    <input type="text"name="fname" >
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-   <!-- <a href="/anil/admin"> -->
-        
-    <button type="submit">Login</button>
+    <label for="psw" input type="password" value="psw" id="myInput"><b>Password</b></label>
+    <input type="password" name="psw" >
+    <br>
+<input type="checkbox" onclick="myFunction()">Show Password
+     
+    <button type="submit" >Login</button>
     
-  <div class="container" style="background-color:#f1f1f1">
+  <div class="container" style="background-color:#e7eeee">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
-
-
 </body>
 </html>
+
 
